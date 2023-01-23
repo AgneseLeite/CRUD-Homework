@@ -1,0 +1,111 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border: lightseagreen;
+  --main-bg: #FFFFFF;
+  --second-bg: rgb(207, 220, 219);
+  --btn-font: seagreen;
+  --hover-bg: rgb(213, 248, 246);
+  --box-shadow: rgba(108, 152, 128, 0.25);
+}
+
+.heading {
+  width: 100%;
+}
+
+.container-main {
+  padding: 2rem 4.3rem;
+  background-color: var(--second-bg);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: .5rem;
+}
+
+.card {
+  max-width: 40rem;
+}
+
+.image {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.edit-btn,
+.delete-btn,
+.update-btn,
+.add-btn {
+  width: 10rem;
+  margin-left: 1rem;
+  padding: .6rem 1.1rem;
+  margin: .6rem;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--main-bg);
+  color: var(--btn-font);
+  font-size: 1.2rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover-bg);
+    transition: .4s;
+  }
+
+  &:active {
+    transform: scale(0.92);
+    box-shadow: 3px 2px 20px 2px var(--box-shadow);
+    transition: .3s;
+  }
+}
+
+.add-title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+.form-container {
+  padding: 50px;
+  margin-left: 3rem;
+}
+
+.add-textarea,
+.form-textarea {
+  border: none;
+  box-shadow: 3px 2px 20px 2px var(--box-shadow);
+  background-color: var(--main-bg);
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.pre-defined {
+  display: none;
+}
+
+.add-pre {
+  background-color: var(--second-bg);
+}
+
+.add-input,
+.form-input,
+.add-link{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
